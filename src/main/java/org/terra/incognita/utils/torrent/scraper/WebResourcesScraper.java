@@ -12,15 +12,15 @@ import org.apache.log4j.*;
  *
  * <p>An url coudn't extends over several lines</p>
  */
-public class URLTorrentScraper {
+public class WebResourcesScraper {
 
     public static final String TORRENT_URL_END_TOKEN = ".torrent\"";
     public static final String URL_END_TOKEN = "\"";
     public static final String URL_BEGIN_TOKEM = "\"https://";
-    public static Logger log = Logger.getLogger(URLTorrentScraper.class);
+    public static Logger log = Logger.getLogger(WebResourcesScraper.class);
 
-    public TorrentURL []  extractURLFromReader(Reader reader) throws IOException {
-        List<TorrentURL> result = new ArrayList<>();
+    public WebResourceURL[]  extractURLFromReader(Reader reader) throws IOException {
+        List<WebResourceURL> result = new ArrayList<>();
         BufferedReader breader = new BufferedReader(rader);
         String line = null;
         while ( (line = breader.readLine()) != null ) {

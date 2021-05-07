@@ -3,7 +3,7 @@ package org.terra.incognita.utils.torrent.scraper;
 /**
  * A pojo with info about a torrent file
  */
-public class TorrentURL {
+public class WebResourceURL {
 
     /**
      * URL to download de torrent file
