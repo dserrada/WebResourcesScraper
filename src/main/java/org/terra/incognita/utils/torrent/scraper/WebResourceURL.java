@@ -17,4 +17,20 @@ public class WebResourceURL {
     public void setUrl(String url) {
         this.url = url;
     }
+
+    /**
+     * Constructor
+     * @param url
+     */
+    public WebResourceURL(String url) {
+        this.url = url;
+    }
+
+    /**
+     * Empty constructor
+     */
+    public WebResourceURL() {
+    }
+
+
 }
