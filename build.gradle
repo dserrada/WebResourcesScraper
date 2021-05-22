@@ -2,6 +2,14 @@ plugins {
     id 'java'
 }
 
+java {
+    toolchain {
+        // Compilations fails, with gralde, when setting to version 16
+        languageVersion = JavaLanguageVersion.of(14)
+    }
+}
+
+
 group 'org.terra.incognita.utils'
 version '0.1-SNAPSHOT'
 
